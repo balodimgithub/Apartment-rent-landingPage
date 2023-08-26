@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,500&family=Open+Sans&display=swap');
+*{
+    font-family: 'Nunito Sans', sans-serif;
+}
+.img-bg1{
+  background-image: url('./img/img1.svg');
+  background-size: cover;
+}
+.img-bg2{
+  background-image: url('./img/img2.svg');
+  background-size: cover;
+}
