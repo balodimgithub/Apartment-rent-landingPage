@@ -621,8 +621,28 @@ video {
   inset-inline-end: 0.25rem;
 }
 
+.left-6 {
+  left: 1.5rem;
+}
+
+.right-6 {
+  right: 1.5rem;
+}
+
 .top-0 {
   top: 0px;
+}
+
+.top-\[40px\] {
+  top: 40px;
+}
+
+.top-\[1000px\] {
+  top: 1000px;
+}
+
+.top-\[100px\] {
+  top: 100px;
 }
 
 .isolate {
@@ -670,28 +690,12 @@ video {
   margin-bottom: 20px;
 }
 
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
 .mt-2 {
   margin-top: 0.5rem;
-}
-
-.mb-\[50px\] {
-  margin-bottom: 50px;
-}
-
-.mb-\[100px\] {
-  margin-bottom: 100px;
-}
-
-.mt-\[300px\] {
-  margin-top: 300px;
-}
-
-.mt-\[30px\] {
-  margin-top: 30px;
-}
-
-.mt-\[50px\] {
-  margin-top: 50px;
 }
 
 .mt-\[70px\] {
@@ -1367,6 +1371,12 @@ video {
   margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
+.space-y-6 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+}
+
 .space-y-reverse > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 1;
 }
@@ -1825,6 +1835,11 @@ video {
   --tw-border-opacity: 20%;
 }
 
+.bg-\[\#0081f1\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 129 241 / var(--tw-bg-opacity));
+}
+
 .bg-\[\#0C101866\] {
   background-color: #0C101866;
 }
@@ -2000,6 +2015,11 @@ video {
 .px-\[24px\] {
   padding-left: 24px;
   padding-right: 24px;
+}
+
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .py-\[10px\] {
@@ -2567,6 +2587,52 @@ video {
   background-size: cover;
 }
 
+.hamburger{
+  cursor:pointer;
+  width:24px;
+  height:24px;
+  transition:all 0.25s;
+  position:relative;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+  position:absolute;
+  top:0;
+  left:0;
+  width:24px;
+  height:2px;
+  background: black;
+  transform:rotate(0);
+  transition:all 0.5s;
+}
+
+.hamburger-middle{
+  transform:translateY(7px);
+}
+
+.hamburger-bottom{
+  transform:translateY(14px);
+}
+
+.open{
+  transform:rotate(90deg);
+  transform:translateY(0px);
+}
+
+.open .hamburger-top{
+  transform: rotate(45deg) translateY(6px) translate(6px);
+}
+
+.open .hamburger-middle{
+  display:none;
+}
+
+.open .hamburger-bottom{
+  transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
+
 .hover\:font-bold:hover {
   font-weight: 700;
 }
@@ -2592,6 +2658,11 @@ video {
   text-align: center;
 }
 
+.focus\:outline-none:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
 .focus\:hover\:text-center:hover:focus {
   text-align: center;
 }
@@ -2615,6 +2686,10 @@ video {
 
   .md\:flex {
     display: flex;
+  }
+
+  .md\:hidden {
+    display: none;
   }
 
   .md\:h-\[100\%\] {

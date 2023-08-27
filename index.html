@@ -33,7 +33,7 @@
         <a href="#" class="text-[12px] text-[#5C5F64] leading-[18px] font-[400] 
         md:text-[16px] md:leading-[22px] md:font-[700] hover:text-[#3C79F5]">Listers</a>
         </div>
-        <div class="flex gap-[9px]">
+        <div class="hidden  md:flex gap-[9px]">
         <a href="#" class="text-[12px] text-[#3C79F5] bg-[#C3D5FC] bg-opacity-[20%] 
          rounded-[8px]  leading-[18px] py-[10px] px-[16px]  
         md:text-[16px] font-[600]  
@@ -41,9 +41,14 @@
         <a href="#" class="text-[12px] text-white bg-[#3670E7] bg-opacity-[90%]
         rounded-[8px] leading-[18px] py-[10px] px-[16px]  
         md:text-[16px] font-[600]  
-        md:leading-[22px]">Try i-Rent for free</a>
+        md:leading-[22px]">Try Quotient for free</a>
         </div>
-        
+        <button id="menu-btn" class=" block hamburger md:hidden 
+     focus:outline-none">
+  <span class="hamburger-top"></span>
+  <span class="hamburger-middle"></span>
+  <span class="hamburger-bottom"></span>
+  </button>
     </nav>
   <!--  -->
   <section class="mt-[70px] px-[24px]  md:px-[40px] lg:px-[80px] mb-[20px] lg:mb-[60px] md:mb-[40px]  ">
@@ -348,5 +353,25 @@ gap-[30px] md:gap-[30px] lg:gap-[41px] overflow-y-scroll">
   <img src="./img/Rectangle 6.png" class="w-[100%] md:h-[100%] h-[400px]" alt="">
   </div>
   </section>
+  <div class="md:hidden">
+    <div  id="menu" class="bg-[#0081f1] fixed top-[100px] text-white flex flex-col items-center
+    hidden self-end  py-8 mt-10 space-y-6 font-bold 
+    sm:w-auto sm:self-center left-6 right-6">
+    <a href="#Home">Home</a>
+    <a href="#About">About</a>
+    <a href="#Project">Project</a>
+    <a href="#Contact">Contact</a>
+    <div class="flex justify-start gap-[9px]">
+      <a href="#" class="text-[12px] text-[#3C79F5] bg-[#C3D5FC] bg-opacity-[20%] 
+       rounded-[8px]  leading-[18px] py-[10px] px-[16px]  
+      md:text-[16px] font-[600]  
+      md:leading-[22px]">Log in</a>
+      <a href="#" class="text-[12px] text-white bg-[#3670E7] bg-opacity-[90%]
+      rounded-[8px] leading-[18px] py-[10px] px-[16px]  
+      md:text-[16px] font-[600]  
+      md:leading-[22px]">Try Quotient for free</a>
+      </div>
+</div>
+</div>
 </body>
 </html>
