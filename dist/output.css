@@ -2778,6 +2778,11 @@ video {
     padding-bottom: 40px;
   }
 
+  .md\:py-\[20px\] {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
   .md\:text-\[14px\] {
     font-size: 14px;
   }
