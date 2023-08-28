@@ -633,16 +633,16 @@ video {
   top: 0px;
 }
 
-.top-\[40px\] {
-  top: 40px;
-}
-
-.top-\[1000px\] {
-  top: 1000px;
-}
-
 .top-\[100px\] {
   top: 100px;
+}
+
+.top-\[90px\] {
+  top: 90px;
+}
+
+.top-\[50px\] {
+  top: 50px;
 }
 
 .isolate {
@@ -2254,6 +2254,11 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .underline {
