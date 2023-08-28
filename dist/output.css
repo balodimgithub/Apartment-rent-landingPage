@@ -633,16 +633,12 @@ video {
   top: 0px;
 }
 
-.top-\[100px\] {
-  top: 100px;
-}
-
-.top-\[90px\] {
-  top: 90px;
-}
-
 .top-\[50px\] {
   top: 50px;
+}
+
+.top-\[30px\] {
+  top: 30px;
 }
 
 .isolate {
@@ -819,6 +815,10 @@ video {
 
 .w-\[100\%\] {
   width: 100%;
+}
+
+.w-\[100px\] {
+  width: 100px;
 }
 
 .flex-shrink {
@@ -1835,11 +1835,6 @@ video {
   --tw-border-opacity: 20%;
 }
 
-.bg-\[\#0081f1\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 129 241 / var(--tw-bg-opacity));
-}
-
 .bg-\[\#0C101866\] {
   background-color: #0C101866;
 }
@@ -2246,6 +2241,11 @@ video {
   color: rgb(231 231 232 / var(--tw-text-opacity));
 }
 
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
 .text-blue-500 {
   --tw-text-opacity: 1;
   color: rgb(59 130 246 / var(--tw-text-opacity));
@@ -2254,11 +2254,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-black {
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -2749,6 +2744,10 @@ video {
     gap: 30px;
   }
 
+  .md\:overflow-y-scroll {
+    overflow-y: scroll;
+  }
+
   .md\:p-\[16px\] {
     padding: 16px;
   }
@@ -2768,6 +2767,11 @@ video {
     padding-right: 40px;
   }
 
+  .md\:py-\[20px\] {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
   .md\:py-\[30px\] {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -2776,11 +2780,6 @@ video {
   .md\:py-\[40px\] {
     padding-top: 40px;
     padding-bottom: 40px;
-  }
-
-  .md\:py-\[20px\] {
-    padding-top: 20px;
-    padding-bottom: 20px;
   }
 
   .md\:text-\[14px\] {
